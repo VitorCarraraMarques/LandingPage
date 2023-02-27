@@ -1,0 +1,22 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Lexend'; 
+    color: #eeeeeeff;
+}
+
+footer{
+    color: #eeeeeeff;
+    background: #222222ff;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 30px; 
+    padding-top: 10px;
+    border-top: 0.4px solid #eeeeeeff;
+    width: 100%;
+    position: relative;
+    top: 10vh;
+}
+

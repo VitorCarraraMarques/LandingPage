@@ -3,14 +3,40 @@
 
 {% block title %} Carrara Dev {% endblock %}
 
-{% block styles %}
-<link rel="stylesheet" href="{% static 'css/home.css' %}">
-{% endblock %}
+{% block styles %}<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">{% endblock %}
 
 {% block content %}
-<div id="content"> WELCOME </div>
+<main class="main"> 
+    <section class="main-upper">
+        <h2 class="main-upper-head"> Olá</h2>
+        <h3 class="main-upper-message"> O que deseja ver? </h3>
+    </section>
+
+    <section class="main-lower">
+        <div class="main-lower-item">
+            <a class="main-lower-item-link" href="">
+                <img class="main-lower-item-icon" src="{% static 'images/aboutIcon.png' %}" > 
+                <p class="main-lower-item-title"> Sobre Vítor Carrara</p>
+            </a>
+        </div>
+
+        <div class="main-lower-item">
+            <a class="main-lower-item-link" href="projects/">    
+                <img class="main-lower-item-icon" src="{% static 'images/projectsIcon.png' %}" height="400">
+                <p class="main-lower-item-title"> Projetos</p> 
+            </a>
+        </div>
+
+        <div class="main-lower-item">
+            <a class="main-lower-item-link" href="">
+                <img class="main-lower-item-icon" src="{% static 'images/contactIcon.png' %}" height="400">
+                <p class="main-lower-item-title"> Contato</p> 
+            </a>
+        </div>
+    </section>
+</main>
 {% endblock %}
 
 {% block scripts %}
-    <script src="{% static 'js/home.js' %}"></script>
+    <!-- <script src="{% static 'js/home.js' %}"></script> -->
 {% endblock %}

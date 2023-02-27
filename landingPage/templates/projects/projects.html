@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block styles %} <link rel="stylesheet" type="text/css" href="{% static 'css/projects.css' %}"> {% endblock %}
+
+{% block title %} Carrara Dev: Projetos {% endblock %}
+
+{% block navbar %} {% include 'nav-bar.html' %} {% endblock %}
+
+{% block content %}
+<main class="main"> 
+    <section class="main-upper">
+        <h2 class="main-upper-title">
+            PROJETOS PESSOAIS
+        </h2>
+
+        <h3 class="main-upper-text">
+            Esses são os meus projetinhos pessoais S2. <br>
+
+            Cada um desses projetos corresponde a uma etapa do meu aprendizado. A ideia por trás de nenhum deles foi desenvolver algo pronto para ser utilizado em produção, pelo contrário, acredito que eu serei o único a utilizar a maior parte deles por um longo tempo :) <br>
+
+            Mas então, qual a função de um software que não tem usuário? Estudos! Todos esses projetos surgiram da mesma ideia: <br>
+
+            “Hmmm… Acho que dá pra criar um programa que faz isso!” <br>
+
+            Seguido por muitas horas tentando descobrir sozinho como implementar a ideia. <br>
+
+            Se você quiser saber um pouco mais sobre qualquer um dos projetos, basta passar o mouse por cima dele! <br>
+        </h3>
+    </section>
+
+    <section class="main-lower">
+        <div class="main-lower-left-project"> 
+            <p class="main-lower-left-project-title"> É primo?</p>
+            <img class="main-lower-left-project-gif" src="{% static 'images/éprimo.gif' %}"> 
+        </div>
+        
+        <div class="main-lower-right-project"> 
+            <p class="main-lower-right-project-title"> Somador de Onda </p>
+            <img class="main-lower-right-project-gif" src="{% static 'images/p5somaonda.gif' %}"> 
+        </div>
+        
+        
+        <div class="main-lower-left-project"> 
+            <p class="main-lower-left-project-title"> Mouse que Atrai </p>
+            <img class="main-lower-left-project-gif" src="{% static 'images/p5simuladorforça.gif' %}"> 
+        </div>
+
+        <div class="main-lower-right-project"> 
+            <p class="main-lower-right-project-title"> Ice Skater Game </p>
+            <img class="main-lower-right-project-gif" src="{% static 'images/icesakter.gif' %}"> 
+        </div>
+
+        <div class="main-lower-left-project"> 
+            <p class="main-lower-left-project-title"> Organizador de Móveis </p>
+            <img class="main-lower-left-project-gif" src="{% static 'images/organizadorMoveis.gif' %}"> 
+        </div>
+
+    </section>
+</main>
+
+{% endblock %}

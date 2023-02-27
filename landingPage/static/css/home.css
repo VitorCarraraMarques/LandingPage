@@ -1,0 +1,65 @@
+@import url('https:fonts.googleapis.com/css?family=Lexend');
+
+body{
+    background: #222222ff;
+}
+
+.main-upper{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px; 
+    margin: 10px; 
+}
+
+.main-upper-head{
+    font-size: 128px;
+}
+
+.main-upper-message{
+    padding: 32px; 
+    font-size: 96px;
+}
+
+.main-lower{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    gap: 50px;
+    
+}
+
+.main-lower-item{
+    display: flex;
+    flex-direction: column;  
+}
+
+.main-lower-item-link{
+    justify-content: center;
+    color: #eeeeeeff;
+    border-radius: 5%;
+    transition: transform 300ms ease-in-out;
+}
+
+
+
+
+.main-lower-item-link:hover{
+    transform: scale(1.2);
+    background-color: #555555;
+    color: #eeeeeeff;
+    
+}
+
+.main-lower-item-icon{
+    height: 400px;  
+}
+
+.main-lower-item-title{
+    font-size: 48px; 
+    text-align: center;
+}
+
+

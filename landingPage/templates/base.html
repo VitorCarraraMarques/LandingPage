@@ -14,19 +14,12 @@
     </head>
 
     <body> 
-        <header> 
-            <nav class="nav-bar justify-content-end navbar-expand-lg">
-                <ul class="nav">
-                    <li class="nav-item"> <a class="nav-link" href="/"> <i class="fa fa-home"></i> Home </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="#"> <i class="fa fa-projects"></i> Projects </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="#"> <i class="fa fa-about"></i> About </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="#"> <i class="fa fa-contact"></i> Contact </a></li>
-                </ul>
-            </nav>
+        <header class="header"> 
+        {% block navbar %} {% endblock %}    
         </header>
         {% block content %} {% endblock %}
         <footer class="page-footer font-small blue">
-            <div class="footer-copyright text-center py-3"> 
+            <div class="footer"> 
                 @2023 Copyright: <a href="https://www.github.com/VitorCarraraMarques"> Vítor Carrara </a>
             </div> 
         </footer>
